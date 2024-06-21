@@ -1,0 +1,18 @@
+.list-1{
+    font-size: 30px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.list-2{
+    font-size: 30px;
+    list-style-type: armenian;
+}
+.list-img{
+   list-style-image: url(../img/Cute-Rabbit-icon.png);
+}
+dt{
+    background-color: bisque;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
