@@ -1,0 +1,33 @@
+.img-1{
+    float:left;
+    margin-right: 5px;
+}
+.img-2{
+    display: block;
+    clear: both;
+    float: right;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+h1{
+    text-align: center;
+   clear: both;
+}
+
+body{
+    /* margin: 0;
+    height: 100vh;
+    background-image: url(../img/images.jpg);
+    background-repeat:no-repeat;/*repeat-y no-repeat;*/
+    /* background-position-x:50% ;left, center, right */
+    /* background-position-y:bottom ;top, center, bottom */
+    /* background-position: right top; */
+    /* background-size: cover; */
+    background: #000 url(../img/bg.jpg) no-repeat center top;
+    background-attachment: fixed;
+}
+p{
+    background-color: rgba(255,255,255,.6);
+    font-size: 24px;
+    padding: 15px;
+}
