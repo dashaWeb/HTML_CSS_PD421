@@ -1,0 +1,25 @@
+a{
+    font-size: 40px;
+}
+a:link{
+    background-color: rgb(89, 4, 85);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+a:visited{
+    background-color: green;
+    color: #fff;
+}
+a:hover{
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 5px #000;
+}
+a:active{
+    background-color: orange;
+    border:double
+}
+p{
+    text-align: center;
+}
