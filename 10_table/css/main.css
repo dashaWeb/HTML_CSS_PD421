@@ -1,0 +1,88 @@
+/* <!-- Example--1 --> */
+/* table,td,th{
+    border: solid 1px #000
+}
+table{
+
+    border-collapse: collapse;
+    width: 500px;
+    margin: 0 auto;
+    height: 500px;
+}
+.td-1{
+    text-align: right;
+    vertical-align: bottom;
+} */
+/* <!-- Example--2 --> */
+/* .table-2 th{
+    background-color: #dddddd;
+}
+table{
+    border-collapse: collapse;
+    width: 500px;
+    margin: 0 auto;
+    height: 500px;
+}
+.table-2, .table-2 td, .table-2 th{
+    border:#c2d3f1 ridge 5px;
+    padding: 5px;
+}
+
+.table-2 tr td:nth-child(2){
+    background-color: #ddeefe;
+    text-align: center;
+    width: 70px;
+}
+.table-2 tr td:nth-child(3){
+    background-color: #ffdddc;
+    text-align: center;
+    width: 70px;
+}
+.table-2 tfoot td{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+} */
+
+/* <!-- Example--3 --> */
+
+.table-3, .table-3 td{
+    border:solid 1px
+}
+.table-3{
+    border-collapse: collapse;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+/* .table-3 tr:first-child
+{
+    background-color: red;
+}
+.table-3 tr:last-child{
+    background-color: red;
+} */
+/* .table-3 tr:nth-child(even){
+    background-color: green;
+}
+.table-3 tr:nth-child(odd){
+    background-color: yellow;
+} */
+
+/* .table-3 tr:nth-child(3n){
+    background-color: green;
+} */
+.table-3 tr:nth-child(3n + 5){
+    background-color: green;
+}
+div p:nth-of-type(4){
+    color:green
+}
+div p:last-of-type
+{
+    background-color: yellow;
+}
+div p:first-of-type
+{
+    background-color: yellow;
+}
