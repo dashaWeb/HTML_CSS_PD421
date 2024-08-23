@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 500px repeat(3, 200px);
+    grid-template-areas: "header menu menu menu"
+                        "hero hero hero hero"
+                        "main main . image"
+                        "main main . extra"
+                        "banner banner banner banner";
+}
+
+header,
+nav,
+.hero,
+main,
+figure,
+article,
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+header,
+nav,
+.hero,
+main {
+    color: #fff;
+}
+
+header {
+    background-color: #101628;
+    grid-area: header;
+}
+
+nav {
+    background-color: #ef3d4c;
+    grid-area: menu;
+}
+
+.hero {
+    background-color: #4c86c6;
+    grid-area: hero;
+}
+
+main {
+    background-color: #24344b;
+    grid-area: main;
+}
+
+figure {
+    background-color: #c1e4e6;
+    grid-area: image;
+}
+
+article {
+    background-color: #4dbd97;
+    grid-area: extra;
+}
+
+.banner {
+    background-color: #fed269;
+    grid-area: banner;
+}
+
+
+
+@media (max-width:1024px)
+{
+    .container{
+        width: 768px;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 100px repeat(2,400px) repeat(2,150px);
+        grid-template-areas: 'header header header'
+                                'hero hero hero'
+                                'menu main main'
+                                'menu banner banner'
+                                'menu extra image';
+    }
+}
+@media (max-width:320px)
+{
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,100px) repeat(2,250px) repeat(3,200px);
+        grid-template-areas: 'header'
+                                'menu'
+                                'hero'
+                                'main'
+                                'banner'
+                                'extra'
+                                'image';
+    }
+}
+/* header{
+    background-color: #101628;
+}
+nav{
+    background-color: #ef3d4c;
+    grid-column: 2/ span 3;
+}
+.hero{
+    background-color:#4c86c6;
+     grid-column: 1/ span 4; 
+}
+main{
+    background-color: #24344b;
+    grid-column: 1 / span 2;
+    grid-row: 3/span 2;
+}
+figure{
+    background-color: #c1e4e6;
+    grid-column-start: 4;
+}
+article{
+    background-color: #4dbd97;
+    grid-column-start: 4;
+}
+.banner{
+    background-color: #fed269;
+    grid-column-start: span 4;
+} */
